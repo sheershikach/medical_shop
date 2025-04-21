@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact MedPlus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            background-image: url('contact.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            color: #333;
+        }
+
+        nav {
+            background-color: blue;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
+            border-radius: 100px; 
+        }
+
+        .logo {
+            width: 65px;
+            height: 60px;
+            border: 5px solid gray;
+            border-radius: 100px;
+            position: absolute;
+            left: 30px;
+            top: 0;
+        }
+
+        nav a {
+            float: right;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+            text-decoration: none;
+            
+        }
+
+        nav a:hover {
+            background-color: #fff; 
+            color: #0056b3; 
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: skyblue;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            font-size: 10px;
+            color: #666;
+        }
+ a{
+       font-size: 20px;
+    }
+
+    </style>
+</head>
+<body>
+<nav>
+    <img class="logo" src="logo.jpg"/>
+    <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart</a>
+    <a href="about.html"><i class="fa-solid fa-address-card"></i>&nbsp;About</a>
+    <a href="medicines.php"><i class="fa-solid fa-house-medical"></i>&nbsp;Medicine</a>
+    <a href="customer_home.html"><i class="fa-solid fa-house-user"></i>&nbsp;Home</a>
+</nav>
+<div class="content">
+    <h2>Contact Us</h2>
+    <p>Feel free to reach out to us for any inquiries or feedback.</p>
+    <form action="contact.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <input type="text" name="number" placeholder="Your Number" required><br>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<footer>
+    <i class="fa-brands fa-facebook fa-fade fa-2xl" style="color: #0752d5;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa-brands fa-instagram fa-fade fa-2xl" style="color: #e50ba0;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa-brands fa-twitter fa-fade fa-2xl" style="color: #061dcb;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa-sharp fa-solid fa-envelope fa-fade fa-2xl" style="color: #f19e0e;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</footer>
+</body>
+</html>
